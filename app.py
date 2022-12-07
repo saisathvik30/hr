@@ -73,4 +73,4 @@ def predict():
 if __name__ == "__main__":
     svc = joblib.load("svm_model.pkl")
     model_columns = joblib.load("model_columns.pkl")
-    app.run(host="0.0.0.0", port=5000)
+    app.run(debug=True)
